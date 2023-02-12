@@ -2,8 +2,8 @@
 
 #include <Core\Type.h>
 
-#define gDXDevice	DX11_1Context::gContext->GetDX11Device()
-#define gDXContext  DX11_1Context::gContext->GetDX11Context()
+#define gDXDevice	Context::gContext->GetDX11Device()
+#define gDXContext  Context::gContext->GetDX11Context()
 
 class Context
 {

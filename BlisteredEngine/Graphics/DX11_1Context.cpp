@@ -119,7 +119,6 @@ void DX11_1Context::CreateSwapChain()
 	LOG_HR << mDevice->CreateDepthStencilView(mDsBuffer.Get(), nullptr, mDsv.GetAddressOf());
 
 
-	
 	CD3D11_VIEWPORT vp(0.f, 0.f, (float)mWidth, (float)mHeight);
 	mContext->RSSetViewports(1, &vp);
 
