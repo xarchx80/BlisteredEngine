@@ -33,7 +33,11 @@ private:
 	ID3D11InputLayout* inputLayout;
 	ID3D11InputLayout* ilo;
 	//ID3D11Buffer* vbo;
+<<<<<<< HEAD
 
+=======
+	uint size;
+>>>>>>> main
 	std::unique_ptr<DX11Shader> shader;
 	std::unique_ptr<DX11Buffer> vbo;
 };
