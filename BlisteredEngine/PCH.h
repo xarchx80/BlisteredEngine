@@ -15,7 +15,11 @@
 #include <Core\Log.h>
 
 #include <memory>
+#include <vector>
 
+namespace Microsoft { namespace WRL{} }
+
+using namespace Microsoft::WRL;
 
 //#ifdef _DEBUG
 //#include <crtdbg.h>

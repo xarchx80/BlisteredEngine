@@ -9,5 +9,6 @@ int main(int args, char* argv[])
 	
 	TriangleScene scene0;
 	//system("pause");
+	
 	return frame.ExecProcedure(&scene0);
 }

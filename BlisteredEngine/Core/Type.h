@@ -44,14 +44,20 @@ struct	HICON__; typedef HICON__ *HICON;
 
 struct WNDCLASSEXT;
 
-
 typedef unsigned int	uint;
+typedef UINT_PTR		uint_ptr;
 typedef unsigned char	byte;
 
 //engine declare
 class Context;
 class DX11Context;
 class DX11ContextExt;
+
+struct DX11Buffer;
+struct DX11Shader;
+
+template<typename T>
+struct DXInputLayoutObject;
 
 
 //directx11
@@ -64,7 +70,16 @@ struct ID3D11Buffer;
 struct ID3D11VertexShader;
 struct ID3D11PixelShader;
 struct ID3D11InputLayout;
-
+struct ID3D10Blob;
+typedef ID3D10Blob ID3DBlob;
+struct D3D11_INPUT_ELEMENT_DESC;
 
 //user declare
 class Scene;
+
+
+
+struct VertexBufferCreateInfo
+{
+
+};

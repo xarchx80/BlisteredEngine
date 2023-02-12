@@ -22,7 +22,7 @@ WndFrame::WndFrame(Wnd* parent, uint x, uint y, uint width, uint height)
 
 void WndFrame::OnCreateEvent(uint cx, uint cy)
 {
-	mContext = std::make_shared<DX11Context>(cx, cy, *this, false);
+	mContext = std::make_shared<DX11_1Context>(cx, cy, *this, false);
 }
 
 void WndFrame::KeyPressEvent(uint keyCode)

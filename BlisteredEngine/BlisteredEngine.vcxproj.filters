@@ -11,6 +11,12 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{c42d31d7-0593-4786-a9c4-b050a514fc67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{011b9476-51ba-49a9-a8c0-5797b6c96d30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -28,23 +34,35 @@
     <ClCompile Include="Wnd\Wnd.cpp">
       <Filter>Wnd</Filter>
     </ClCompile>
-    <ClCompile Include="Core\Timer.cpp">
-      <Filter>Entry</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphics\DX11ContextExt.cpp">
-      <Filter>Entry</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\TriangleScene.cpp">
-      <Filter>Entry</Filter>
-    </ClCompile>
     <ClCompile Include="Graphics\Context.cpp">
-      <Filter>Entry</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\DX11_1Context.cpp">
-      <Filter>Entry</Filter>
+      <Filter>Graphics</Filter>
     </ClCompile>
     <ClCompile Include="Graphics\DX11Context.cpp">
-      <Filter>Entry</Filter>
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11ContextExt.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11Shader.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Timer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TriangleScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CameraScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11InputLayout.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DX11Buffer.cpp">
+      <Filter>Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,13 +84,41 @@
     <ClInclude Include="Core\Type.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics\DX11Config.h" />
-    <ClInclude Include="Core\Timer.h" />
-    <ClInclude Include="Graphics\DX11ContextExt.h" />
-    <ClInclude Include="Graphics\Context.h" />
-    <ClInclude Include="Scene\Scene.h" />
-    <ClInclude Include="Scene\TriangleScene.h" />
-    <ClInclude Include="Graphics\DX11_1Context.h" />
-    <ClInclude Include="Graphics\DX11Context.h" />
+    <ClInclude Include="Graphics\Context.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11_1Context.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11Config.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11Context.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11ContextExt.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Timer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CameraScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TriangleScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11InputLayout.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX11Buffer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
