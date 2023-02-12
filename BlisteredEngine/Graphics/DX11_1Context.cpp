@@ -109,7 +109,6 @@ void DX11_1Context::CreateSwapChain()
 	depthStencilDesc.Height = mHeight;
 	depthStencilDesc.MipLevels = 1;
 	depthStencilDesc.ArraySize = 1;
-	depthStencilDesc.ArraySize = 1;
 	depthStencilDesc.Format = DXGI_FORMAT_D24_UNORM_S8_UINT;
 	depthStencilDesc.SampleDesc.Count = 1;
 	depthStencilDesc.SampleDesc.Quality = 0;
@@ -120,7 +119,7 @@ void DX11_1Context::CreateSwapChain()
 	LOG_HR << mDevice->CreateDepthStencilView(mDsBuffer.Get(), nullptr, mDsv.GetAddressOf());
 
 
-
+	
 	CD3D11_VIEWPORT vp(0.f, 0.f, (float)mWidth, (float)mHeight);
 	mContext->RSSetViewports(1, &vp);
 
